@@ -32,7 +32,12 @@ The main goals of our data pipeline would be as follows:
 3. Harmonize the data to facilitate consumption and decision making
 
 ## The Tools
-Now let us a take a look at the various tools / technologies that we would be utilizing to setup our data pipeline.
+Now let us a take a look at the various tools / technologies that we would be utilizing to setup our data pipeline. In the interest of meeting our objectives of accuracy, scalability, & reproducability, we make sure that the technology that we use to build the data pipeline has the following important properties:
+
+- **Open Source:** This is an essential requirement to make our data pipeline reproducible
+- **Cloud Native:** This means that our tools allow us to build all the elements of the data pipeline in the cloud infrastructure itself and this property is crucial for scalability of the pipeline
+
+The major elements of the data pipeline are:
 
 
 
