@@ -14,6 +14,7 @@ It is of paramount importance for the security companies to decrease the rate of
 In other words, the objective is to build a model that can distinguish between:
 This:
 ![burglar](https://cdn.agriland.ie/uploads/2015/11/breaking-and-entering-425x235.jpg)
+
 and this:
 ![dog](https://us.123rf.com/450wm/thesupe87/thesupe870805/thesupe87080500115/3098389-ritratto-di-un-giovane-tri-color-beagle-cucciolo.jpg?ver=6)
 
@@ -23,6 +24,7 @@ While **accuracy** is clearly one important attribute of any acceptable solution
 The ideal solution for this problem would be a framework in which all the various steps like data cleaning, manipulation, modelling, visualization, etc are setup to work automatically and in the proper order. This is what we call a **data pipeline**. The idea is that give any new data as input, it would flow through the data pipeline and automatically produce the required output; which in our case would be the classification of an object.
 
 ![datapipe](https://cdn-images-1.medium.com/max/1600/1*8-NNHZhRVb5EPHK5iin92Q.png)
+
 The main goals of our data pipeline would be as follows:
 1. Gather the image data from all the sources
 2. Analyze the data and identify potential threats
