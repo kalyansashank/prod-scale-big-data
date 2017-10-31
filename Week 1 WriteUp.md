@@ -16,6 +16,7 @@ This:
 ![burglar](https://cdn.agriland.ie/uploads/2015/11/breaking-and-entering-425x235.jpg)
 
 and this:
+
 ![dog](https://us.123rf.com/450wm/thesupe87/thesupe870805/thesupe87080500115/3098389-ritratto-di-un-giovane-tri-color-beagle-cucciolo.jpg?ver=6)
 
 ## Our Approach To The Solution: Building a Data Pipeline
