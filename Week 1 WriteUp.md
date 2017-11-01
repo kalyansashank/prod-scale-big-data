@@ -44,8 +44,8 @@ The major elements of the data pipeline are:
 
 Each element requires a technology that is best suited for the task. Below are the tools that we choose to work with in our data pipeline.
 
-#### Technologies chosen for Data Storage
-##### Object Storage
+### Technologies chosen for Data Storage
+#### Object Storage
 Object storage is a data storage architecture which treats data as objects and not as a file hierarchy (File storage) or well defined spaces in a table structure(block storage). The image below explains the differences between these three storage systems.
 
 ![storagesystems](https://www.emc.com/content/dam/uwaem/production-design-assets/en/sdsaemmodule/images/ecs-object-storage-the-3-pillars-of-modern-enterprise-data-storage.gif)
@@ -57,11 +57,11 @@ The major advantages of object storage over the other kinds of storage are:
 
 There are a variety of object storage services available from major technology companies like S3 by Amazon, Azure Blob Storage by Microsoft, & Google's Cloud Storage on which we could store our data. 
 
-##### Pachyderm
+#### Pachyderm
 We would use Pachyderm as an additional layer on top of the object storage to keep track of the changes in data and manage data security. Object storage by itself has some limitations in the areas of data versioning and access control of data and thus Pachyderm could help in overcoming these.
 
-#### Technologies chosen for Data Pipelining and Scheduling
-##### Docker
+### Technologies chosen for Data Pipelining and Scheduling
+#### Docker
 As having all the different elements of a data pipeline on different servers would not be practical, generally all these elements are hosted on different virtual instances of the same server. There are two ways to achieve this kind of virtualization:
 - **Traditional Virtualization:** The this involves a  hypervisor which allows multiple Virtual Machines to run on a single machine. Each VM includes a full copy of an operating system, one or more apps, necessary binaries and libraries - taking up tens of GBs. VMs can also be slow to boot.
 
@@ -73,7 +73,7 @@ As having all the different elements of a data pipeline on different servers wou
 
 We choose to use containers for our data pipeline as they take up lesser storage space and are relatively quick to boot up. We will use ***Docker*** to build these containers.
 
-##### Kubernetes
+#### Kubernetes
 
 Kubernetes is a platform for working with containers. Once we have a handful of containers running on a few servers, it can get really confusing to figure out how best to deploy the containers across the servers. Kubernetes provides a means to **deploy, scale and monitor** the various containers. This is done via the Kubernetes master node, which decides how best to schedule the different containers / apps to run on the servers / nodes available.
 
@@ -81,12 +81,12 @@ Kubernetes is a platform for working with containers. Once we have a handful of 
 
 Thus, Kubernetes is a necessary complement to the Docker containers to build our automated data pipeline.
 
-##### Pachyderm
+#### Pachyderm
 We will use the services provided by Pachyderm again here in the Data Pipelining and Scheduling process. Pachyderm helps in tying together all the different elements of the data pipeline and takes care of triggering, data sharding, parallelism, and resource management on the backend.
 
-#### Technologies chosen for Analysis and Model Building
+### Technologies chosen for Analysis and Model Building
 
-##### Python & TensorFlow
+#### Python & TensorFlow
 
 The actual problem of object detection would require us to use several image processing algorithms for which we will use Python language and TensorFlow libraries.
 
