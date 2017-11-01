@@ -64,9 +64,11 @@ We would use Pachyderm as an additional layer on top of the object storage to ke
 ##### Docker
 As having all the different elements of a data pipeline on different servers would not be practical, generally all these elements are hosted on different virtual instances of the same server. There are two ways to achieve this kind of virtualization:
 - **Traditional Virtualization:** The this involves a  hypervisor which allows multiple Virtual Machines to run on a single machine. Each VM includes a full copy of an operating system, one or more apps, necessary binaries and libraries - taking up tens of GBs. VMs can also be slow to boot.
+
 ![vm](https://blogtechniquealtimate.files.wordpress.com/2017/04/photo4.png?w=300&h=270)
 
 - **Containerization:** This involves containers which are stand-alone software packages which have all the dependencies bundled along with them but do not need an entire operating system to be attached. Multiple containers can run on the same machine and share the OS kernel with other containers, each running as isolated processes in user space. Containers take up less space than VMs (container images are typically tens of MBs in size), and start almost instantly. 
+
 ![container](https://bluesentryit.com/wp-content/uploads/docker-example-left.png)
 
 We choose to use containers for our data pipeline as they take up lesser storage space and are relatively quick to boot up. We will use ***Docker*** to build these containers.
