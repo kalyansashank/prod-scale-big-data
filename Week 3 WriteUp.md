@@ -30,6 +30,7 @@ Now that we understand the model that we will be using for object detection, let
 ## TensorFlow : Introduction
 
 TensorFlow is an open source software library for implementing machine learning algorithms using data flow graphs. It is based on dataflow programming, in which the program is modelled as a directed graph of data flowing between operations. In dataflow graphs the nodes represent units of computation, and the edges represent the data consumed or produced by a computation. The image below is an illustration of generic dataflow graphs.
+
 ![dataflow](https://www.tensorflow.org/images/tensors_flowing.gif)
 
 ## Advantages of TensorFlow
